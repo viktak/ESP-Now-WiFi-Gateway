@@ -1,0 +1,214 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8" />
+    <title>ActoSenso Node</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="bootstrap.min.css" rel="stylesheet">
+    <script src="bootstrap.bundle.min.js"></script>
+    <style>
+        .custom-toggler .navbar-toggler-icon {
+            background-image: url("menu.png");
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <div class="container-fluid">
+
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+                <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="/">Status</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/network-settings.html">Network</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/mqtt-settings.html">MQTT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/tools.html">Tools</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/logout">Logout</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="mt-6 p-3 bg-primary text-white rounded">
+            <h1>ESP-Now Sensor Bridge</h1>
+            <h2>System Overview</h2>
+        </div>
+
+        <div class="sectionTitleDiv">
+            <h3>System</h3>
+        </div>
+        <div class="table-responsive">
+            <table class="table table-hover">
+                <tbody>
+                    <tr>
+                        <th>
+                            Device ID:
+                        </th>
+                        <td>
+                            %chipid%
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            Hardware ID:
+                        </th>
+                        <td>
+                            %hardwareid%
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            Hardware version:</th>
+                        <td>
+                            %hardwareversion%</td>
+                    </tr>
+                    <tr>
+                        <th>
+                            Software ID:
+                        </th>
+                        <td>
+                            %softwareid%
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            Firmware version:
+                        </th>
+                        <td>
+                            %firmwareversion%
+                        </td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+
+        <div class="sectionTitleDiv">
+            <h3>Network</h3>
+        </div>
+
+        <table class="table table-hover">
+            <tbody>
+                <tr>
+                    <th>
+                        SSID:
+                    </th>
+                    <td>
+                        %ssid%
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        Channel:
+                    </th>
+                    <td>
+                        %channel%
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        MAC Address:</th>
+                    <td>
+                        %macaddress%</td>
+                </tr>
+                <tr>
+                    <th>
+                        IP Address:</th>
+                    <td>
+                        %ipaddress%</td>
+                </tr>
+                <tr>
+                    <th>
+                        AP SSID:
+                    </th>
+                    <td>
+                        %apssid%
+                    </td>
+                </tr>
+                <!-- <tr>
+                    <th>
+                        AP Channel:
+                    </th>
+                    <td>
+                        %apchannel%
+                    </td>
+                </tr> -->
+                <tr>
+                    <th>
+                        AP MAC Address:
+                    </th>
+                    <td>
+                        %apmacaddress%
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+
+        <div class="sectionTitleDiv">
+            <h3>MQTT</h3>
+        </div>
+
+        <table class="table table-hover">
+            <tbody>
+                <tr>
+                    <th>
+                        MQTT server:
+                    </th>
+                    <td>
+                        %mqtt-server%
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        MQTT port:
+                    </th>
+                    <td>
+                        %mqtt-port%
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        MQTT topic:</th>
+                    <td>
+                        %mqtt-topic%</td>
+                </tr>
+                <tr>
+                    <th>
+                        User name:
+                    </th>
+                    <td>
+                        %mqtt-username%
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="well well-sm">
+            (c)2022 Viktor Takacs - <a href="http://diy.viktak.com" target="_blank">diy.viktak.com</a>
+        </div>
+
+    </div>
+</body>
+
+</html>
